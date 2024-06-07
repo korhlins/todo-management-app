@@ -6,6 +6,7 @@ import com.collins.todomanagement.entity.Todo;
 public class Mapper {
     public static Todo toTodo(TodoDto todoDto){
         Todo todo = new Todo();
+        todo.setId(todoDto.id());
         todo.setTitle(todoDto.title());
         todo.setDescription(todoDto.description());
         todo.setCompleted(todoDto.isCompleted());
